@@ -30,8 +30,8 @@ app.use(bp.urlencoded({ extended: true }));
 app.use(bp.json());
 app.use(flash());
 
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 // app.use((r, s, n) => {
 //   console.log("in a mid", r.user);
