@@ -9,7 +9,7 @@ const bp = require("body-parser");
 const cors = require("cors");
 const flash = require("connect-flash");
 
-const passport = require("./config/passport/passport.js");
+var passport = require("./config/passport/passport.js");
 const database = require('./config/database');
 const routes = require("./src/routes/credentials");
 
