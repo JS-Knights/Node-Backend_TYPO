@@ -1,4 +1,4 @@
-const secret = "Thegreatsecret"
+const secret = process.env.SECRET_KEY;
 const jwt = require("jsonwebtoken");
 const createGravatarUrl = require("./createGravatar");
 
