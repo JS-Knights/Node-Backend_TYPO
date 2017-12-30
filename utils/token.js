@@ -1,4 +1,4 @@
-const secret = process.env.SECRET_KEY;
+const secret = "Thegreatsecret"
 const jwt = require("jsonwebtoken");
 const createGravatarUrl = require("./createGravatar");
 
@@ -13,8 +13,6 @@ function createToken(user) {
     {
       sub: user.id,
       username: user.username,
-      email: user.email,
-      role: "admin",
       gravatar: createGravatarUrl(user.username),
       scope
     },
