@@ -38,10 +38,12 @@ app.use(passport.session());
 //   n();
 // });
 
+app.set('port', (process.env.PORT || 6060));
+
 app.use("/", routes);
 
 database.connectDB(() => {
-  app.listen(PORT, err =>{
+  app.listen(app.get('port'), err =>{
     if(err) throw err;
   });
 });
