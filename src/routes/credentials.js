@@ -2,7 +2,7 @@ const express = require("express");
 var router = express.Router();
 
 const createToken = require("../../utils/token.js");
-var passport = require("../../config/passport/passport.js");
+//var passport = require("../../config/passport/passport.js");
 
 // router.post('/signup', passport.authenticate("local-signup"), function(req, res) {
 //   res.send({ token: createToken(req.user) });
