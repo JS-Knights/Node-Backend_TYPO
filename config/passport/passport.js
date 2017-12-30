@@ -1,4 +1,5 @@
-var passport = require("Passport");
+var passport = require("passport");
+
 const strategies = require("./stratagies");
 const User = require('../../src/model/users');
 
